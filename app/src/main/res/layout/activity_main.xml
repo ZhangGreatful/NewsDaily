@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.newsdaily.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center_horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_p1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/a4"/>
+
+        <ImageView
+            android:id="@+id/iv_p2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/a4"/>
+
+        <ImageView
+            android:id="@+id/iv_p3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/a4"/>
+
+        <ImageView
+            android:id="@+id/iv_p4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/a4"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:alpha="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="点击开启大千世界"
+        android:textColor="#111111"/>
+</FrameLayout>
