@@ -42,13 +42,4 @@
             android:src="@mipmap/a4"/>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_enter"
-        android:alpha="0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:visibility="gone"
-        android:text="点击开启大千世界"
-        android:textColor="#111111"/>
 </FrameLayout>

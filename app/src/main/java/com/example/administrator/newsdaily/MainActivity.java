@@ -8,7 +8,6 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ public class MainActivity extends MyBaseActivity {
     public static final String splash_config = "run";
     public static final String IS_FIRST_RUN  = "isFirstRun";
     private ViewPager mViewPager;
-    private Button    btn;
     private int[]           pic   = {R.drawable.pic_1, R.drawable.picture_2,
             R.drawable.picture_3, R.drawable.picture_4};
     private ImageView[]     icons = new ImageView[4];
@@ -53,7 +51,6 @@ public class MainActivity extends MyBaseActivity {
     }
 
     private void initView() {
-        btn = (Button) findViewById(R.id.btn_enter);
         mViewPager = (ViewPager) findViewById(R.id.id_viewPager);
         for (int i = 0; i < pic.length; i++) {
             ImageView iv = new ImageView(this);
@@ -88,7 +85,7 @@ public class MainActivity extends MyBaseActivity {
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
         }
-
+//      判断当前图片位置,若>=3,则进行activity的跳转,同时保存第一次运行
         @Override
         public void onPageSelected(int position) {
             setPoint(position);
